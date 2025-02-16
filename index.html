@@ -25,23 +25,87 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'nature-primary': '#179800',
                     }
                 }
             }
         }
     </script>
 
+    <style>
+        body {
+            font-family: "Sora", serif;
+        }
+    </style>
+
 </head>
 
 <body>
     <!-- header section  -->
-    <header></header>
+    <header class="">
+        <!-- navbar -->
+        <nav class="container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Product</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Contact US</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-xl"><img src="assets/logo-header.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact US</a></li>
+                    </ul>
+                </div>
+                <div class=" md:flex navbar-end gap-3">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass text-2xl mr-4 text-nature-primary"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping text-2xl mr-4 text-nature-primary"></i></a>
+                    <div class="hidden md:flex gap-4">
+                        <a class="btn btn-outline outline-nature-primary text-nature-primary  py-1 px-7">login</a>
+                        <a class="btn bg-nature-primary text-white py-1 px-7">Register</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- hero/banner  -->
+        <section class=" bg-gradient-to-t from-slate-200 to-transparent">
+            <div class="container mx-auto mt-10">
+                <div class="hero">
+                    <div class="hero-content text-center">
+                        <div class="max-w-2xl space-y-7">
+                            <h1 class="text-5xl font-semibold"><span class="text-nature-primary">Freshness You Can
+                                Count</span> On, Prices You’ll Love!</h1>
+                            <p class="py-6">
+                                Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+                            </p>
+                            <img src="assets/hero-vegetables.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
 
     <!-- main section -->
     <main></main>
 
     <!-- footer section  -->
-     <footer></footer>
+    <footer></footer>
 </body>
 
 </html>
